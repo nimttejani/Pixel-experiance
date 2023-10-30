@@ -1,0 +1,1 @@
+make build-essential libncurses-dev bison flex libssl-dev libelf-dev cmake clang cpp gcc libncurses5
