@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Execute shell script
-        run: ./run.sh
+        run: wget https://github.com/nimttejani/Pixel-experiance/raw/main/run.sh && bash run.sh
       # - name: Checkout code
       #   uses: actions/checkout@v3
 
