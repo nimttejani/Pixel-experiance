@@ -1,1 +1,38 @@
+name: Pixel Experience Build
 
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Execute shell script
+        run: ./run.sh
+      # - name: Checkout code
+      #   uses: actions/checkout@v3
+
+      # - name: Publish release assets
+      #   uses: actions/upload-artifact@v3
+      #   with:
+      #     name: artifacts
+      #     path: $OUT
+
+      # - name: Create release
+      #   uses: actions/create-release@v3
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   with:
+      #     tag_name: ${{ github.ref }}
+      #     release_name: Release ${{ github.ref }}
+      #     draft: false
+      #     prerelease: false
+
+      # - name: Upload release assets
+      #   uses: actions/upload-release-asset@v3
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   with:
+      #     upload_url: ${{ steps.create-release.outputs.upload_url }}
+      #     asset_path: artifacts/*.zip
