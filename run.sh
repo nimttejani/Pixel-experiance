@@ -1,9 +1,9 @@
 #!/bin/bash
 
-sudo apt install make build-essential libncurses-dev bison flex libssl-dev libelf-dev cmake clang cpp gcc libncurses5 android-platform-tools git -y
+sudo apt install make build-essential libncurses-dev bison flex libssl-dev libelf-dev cmake clang cpp gcc libncurses5 android-sdk-platform-tools git -y
 cd ~/
 git clone https://github.com/akhilnarang/scripts && cd scripts
-./setup/android_build_env.sh
+bash /setup/android_build_env.sh
 mkdir bin/
 mkdir android/
 mkdir /android/pe/
