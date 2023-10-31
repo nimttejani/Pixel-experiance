@@ -10,7 +10,7 @@ mkdir android/
 mkdir android/pe/
 sleep 2 
 wget https://storage.googleapis.com/git-repo-downloads/repo
-sudo mv /usr/bin/repo
+sudo mv repo /usr/bin/
 sudo chmod a+x /usr/bin/repo
 cd /android/pe
 git config --global user.email "you@example.com"
