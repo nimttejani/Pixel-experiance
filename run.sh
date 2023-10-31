@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt install make build-essential libncurses-dev bison flex libssl-dev libelf-dev cmake clang cpp gcc libncurses5 android-sdk-platform-tools git python3 python3-pip -y
+apt install make build-essential libncurses-dev bison flex libssl-dev libelf-dev cmake clang cpp gcc libncurses5 android-sdk-platform-tools git python3 python3-pip -y
 sleep 2
 git clone https://github.com/akhilnarang/scripts && cd scripts
 sleep 2
